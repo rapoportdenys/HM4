@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let firstNum = +prompt("Enter first number");
+        let operand = prompt("Enter your math operation");
+        let secondNum = +prompt("Enter second number");
+
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        let resultSum = sum(firstNum, secondNum);
+
+        function sub(a, b) {
+            return a - b;
+        }
+
+        let resultSub = sub(firstNum, secondNum);
+
+        function multiplication(a, b) {
+            return a * b;
+        }
+
+        let resultMultiplication = multiplication(firstNum, secondNum);
+
+        function degree(a, b) {
+            return a / b;
+        }
+
+        let resultDegree = degree(firstNum, secondNum);
+
+        if (operand === "+") {
+            alert("Your result = " + resultSum);
+        } else if (operand === "-") {
+            alert("Your result = " + resultSub);
+        } else if (operand === "*") {
+            alert("Your result = " + resultMultiplication);
+        } else if (operand === "/") {
+            alert("Your result = " + resultDegree);
+        } else {
+            alert("Wrong calc operation")
+        }
+
+
+    </script>
+
+    <script>
+        let firstNum = +prompt("Enter first number");
+        let operand = prompt("Enter your math operation");
+        let secondNum = +prompt("Enter second number");
+
+
+
+        function calcOperation(a, b, c) {
+
+            switch (b) {
+                case "+":
+                    return (a + c);
+                    break;
+                case "-":
+                    return (a - c);
+                    break;
+                case "/":
+                    return (a / c);
+                    break;
+                case "*":
+                    return (a * c);
+                    break;
+                default:
+                    return ("Wrong calc operation")
+            }
+
+        }
+        let result = calcOperation(firstNum, operand, secondNum);
+
+        alert(result)
+
+    </script>
+
+</body>
+
+</html>
